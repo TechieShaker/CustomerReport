@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <meta charset="utf-8">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="customer.js"></script>
+    <style>
+        #googleMap {
+            height: 530px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function Navigate() {
+            window.sessionStorage.setItem('IS_IN_CNTRY', 'Y');
+            window.location.href = 'customers.html';
+        }
+        function GoToHome() {
+            window.sessionStorage.removeItem('stateDetails');
+            window.location.href = 'customers.html';
+        }
+        function getCords(data) {
+            let latLangs = [];
+            let cities = [];
+            if (data) {
+                for (let i = 0; i < data.length; i++) {
+                    let city = data[i].City;
+                    let matchedData = data.filter(t => t.City == city);
+                    let cntnt = '';
+                    if (matchedData != null && matchedData.length > 0) {
+                        for (let i = 0; i < matchedData.length; i++) {
+                            //cntnt = cntnt + '<ul><li>' + data[i].ContactName + '(' + data[i].PostalCode + ')' + '</li></ul>';
+                            cntnt = cntnt + '<ul><li>' + data[i].PostalCode + '</li></ul>';
+                        }
+                    }
+                    let cord = {
+                        coords: { lat: Number(data[i].lat), lng: Number(data[i].long) },
+                        content: cntnt
+                    }
+                    latLangs.push(cord);
+                }
+            }
+            return latLangs;
+        }
+
+        function initMap() {
+            try {
+                let stateData = [];
+                var temp = window.sessionStorage.getItem('stateDetails');
+                stateData = JSON.parse(temp);
+
+                let minlt = Number(stateData[0].lat);
+                let maxlng = Number(stateData[0].long);
+                let latlans = [];
+                for (let i = 0; i < stateData.length; i++) {
+                    if (minlt > Number(stateData[i].lat))
+                        minlt = Number(stateData[i].lat);
+                    if (maxlng < Number(stateData[i].long))
+                        maxlng = Number(stateData[i].long);
+                    latlans.push({ lat: Number(stateData[i].stateLat), lng: Number(stateData[i].statelong) })
+                }
+
+                console.log(latlans);
+                console.log(minlt);
+                console.log(maxlng);
+
+                //var stateLtLn = { lat: Number(stateData[0].stateLat), lng: Number(stateData[0].statelong) };//{ lat: 43.8041, lng: -120.5542 };
+                var stateLtLn = { lng: Number(maxlng), lat: Number(minlt) };//{ lat: 43.8041, lng: -120.5542 };
+                console.log(stateData);
+                var map = new google.maps.Map(document.getElementById('googleMap'), {
+                    zoom: 6.3,
+                    center: stateLtLn,
+                });
+
+                function addMarkersToMap(mapDetails) {
+                    var marker = new google.maps.Marker({
+                        position: mapDetails.coords,
+                        map: map,
+                        icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+                    });
+
+                    var info = new google.maps.InfoWindow({
+                        content: mapDetails.content
+                    });
+
+                    marker.addListener('click', function () {
+                        info.open(map, marker);
+                    });
+                }
+                let coordinates = getCords(stateData);
+                if (coordinates) {
+                    for (let i = 0; i < stateData.length; i++) {
+                        addMarkersToMap(coordinates[i]);
+                    }
+                }
+            }
+            catch (error) {
+                alert(error);
+            }
+        }
+    </script>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Reports</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a id='hrefCust' href="customers.html">Customers</a></li>
+                <li><a href="orders.html">Orders</a></li>
+            </ul>
+        </div>
+    </nav>
+    <span id='spnBack' class="glyphicon glyphicon-chevron-left" style="cursor:pointer;font-size: 25px;color: chocolate;"
+        onclick="Navigate()"></span>
+    <div id="googleMap"></div>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWIOQYvp8w5DW2BPXYwQIUACSV6Wm3n6w&callback=initMap">
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+CustomerID,CustomerName,ContactName,Address,City,PostalCode,State,Country,lat,long,stateLat,statelong
+1,Alfreds Futterkiste,Maria Anders,Obere Str. 57,Berlin,12209,,Germany,52.520008,13.404954,51.1657,10.4515
+2,Ana Trujillo Emparedados y helados,Ana Trujillo,Avda. de la Constituci?n 2222,M?xico D.F.,5021,,Mexico,19.432608,-99.133209,,
+3,Antonio Moreno Taquer?a,Antonio Moreno,Mataderos 2312,M?xico D.F.,5023,,Mexico,19.432608,-99.133209,,
+5,Berglunds snabbk?p,Christina Berglund,Berguvsv?gen 8,Lule?,95822,,Sweden,65.584816,22.156704,60.1282,18.6435
+6,Blauer See Delikatessen,Hanna Moos,Forsterstr. 57,Mannheim,68306,,Germany,49.4883333,8.4647222,51.1657,10.4515
+7,Blondel p?re et fils,Fr?d?rique Citeaux,"24, place Kl?ber",Strasbourg,67000,,France,48.58392,7.74553,46.2276,2.2137
+8,B?lido Comidas preparadas,Mart?n Sommer,"C/ Araquil, 67",Madrid,28023,,Spain,40.416775,-3.70379,40.4637,3.7492
+9,Bon app',Laurence Lebihans,"12, rue des Bouchers",Marseille,13008,,France,43.29695,5.38107,46.2276,2.2137
+12,Cactus Comidas para llevar,Patricio Simpson,Cerrito 333,Buenos Aires,1010,,Argentina,-34.603722,-58.381592,-38.4161,-63.6167
+13,Centro comercial Moctezuma,Francisco Chang,Sierras de Granada 9993,M?xico D.F.,5022,,Mexico,19.432608,-99.133209,,
+14,Chop-suey Chinese,Yang Wang,Hauptstr. 29,Bern,3012,,Switzerland,46.94809,7.44744,46.8182,8.2275
+15,Com?rcio Mineiro,Pedro Afonso,"Av. dos Lus?adas, 23",S?o Paulo,5432,,Brazil,-23.533773,-46.62529,-14.235,-51.9253
+17,Drachenblut Delikatessend,Sven Ottlieb,Walserweg 21,Aachen,52066,,Germany,50.77664,6.08342,51.1657,10.4515
+18,Du monde entier,Janine Labrune,"67, rue des Cinquante Otages",Nantes,44000,,France,47.2184,1.5536,46.2276,2.2137
+20,Ernst Handel,Roland Mendel,Kirchgasse 6,Graz,8010,,Austria,47.076668,15.421371,47.5162,14.5501
+21,Familia Arquibaldo,Aria Cruz,"Rua Or?s, 92",S?o Paulo,5442,,Brazil,-23.533773,-46.62529,-14.235,-51.9253
+22,FISSA Fabrica Inter. Salchichas S.A.,Diego Roel,"C/ Moralzarzal, 86",Madrid,28034,,Spain,40.416775,-3.70379,40.4637,3.7492
+23,Folies gourmandes,Martine Ranc?,"184, chauss?e de Tournai",Lille,59000,,France,50.63297,3.05858,46.2276,2.2137
+24,Folk och f? HB,Maria Larsson,?kergatan 24,Br?cke,84467,,Sweden,59.334591,18.06324,60.1282,18.6435
+25,Frankenversand,Peter Franken,Berliner Platz 43,M?nchen,80805,,Germany,48.137154,11.576124,51.1657,10.4515
+26,France restauration,Carine Schmitt,"54, rue Royale",Nantes,44000,,France,47.2184,1.5536,46.2276,2.2137
+27,Franchi S.p.A.,Paolo Accorti,Via Monte Bianco 34,Torino,10100,,Italy,45.116177,7.742615,41.8719,12.5674
+28,Furia Bacalhau e Frutos do Mar,Lino Rodriguez,Jardim das rosas n. 32,Lisboa,1675,,Portugal,38.736946,-9.142685,39.3999,-8.2245
+29,Galer?a del gastr?nomo,Eduardo Saavedra,"Rambla de Catalu?a, 23",Barcelona,8022,,Spain,41.390205,2.154007,40.4637,3.7492
+30,Godos Cocina T?pica,Jos? Pedro Freyre,"C/ Romero, 33",Sevilla,41101,,Spain,37.392529,-5.994072,40.4637,3.7492
+31,Gourmet Lanchonetes,Andr? Fonseca,"Av. Brasil, 442",Campinas,4876,,Brazil,-22.9056,-47.0608,-14.235,-51.9253
+32,Great Lakes Food Market,Howard Snyder,2732 Baker Blvd.,Eugene,97403,OR,USA,44.0505054,-123.0950506,43.8041,-120.5542
+33,GROSELLA-Restaurante,Manuel Pereira,5? Ave. Los Palos Grandes,Caracas,1081,,Venezuela,10.5,-66.916664,6.4238,-66.5897
+34,Hanari Carnes,Mario Pontes,"Rua do Pa?o, 67",Rio de Janeiro,5454,,Brazil,-22.908333,-43.196388,-14.235,-51.9253
+35,HILARI?N-Abastos,Carlos Hern?ndez,Carrera 22 con Ave. Carlos Soublette #8-35,San Crist?bal,5022,,Venezuela,7.76694,-72.225,6.4238,-66.5897
+36,Hungry Coyote Import Store,Yoshi Latimer,City Center Plaza 516 Main St.,Elgin,97827,OR,USA,45.5649,-117.9174,43.8041,-120.5542
+39,K?niglich Essen,Philip Cramer,Maubelstr. 90,Brandenburg,14776,,Germany,52.41667,12.55,51.1657,10.4515
+40,La corne d'abondance,Daniel Tonini,"67, avenue de l'Europe",Versailles,78000,,France,48.801407,2.130122,46.2276,2.2137
+41,La maison d'Asie,Annette Roulet,1 rue Alsace-Lorraine,Toulouse,31000,,France,43.60426,1.44367,46.2276,2.2137
+43,Lazy K Kountry Store,John Steel,12 Orchestra Terrace,Walla Walla,99362,WA,USA,46.0649999,-118.3302784,47.7511,-120.7401
+44,Lehmanns Marktstand,Renate Messner,Magazinweg 7,Frankfurt a.M.,60528,,Germany,50.110924,8.682127,51.1657,10.4515
+45,Let's Stop N Shop,Jaime Yorres,87 Polk St. Suite 5,San Francisco,94117,CA,USA,37.7792768,-122.4192704,-36.7783,-119.4179
+46,LILA-Supermercado,Carlos Gonz?lez,Carrera 52 con Ave. Bol?var #65-98 Llano Largo,Barquisimeto,3508,,Venezuela,10.0739,-69.3228,6.4238,-66.5897
+47,LINO-Delicateses,Felipe Izquierdo,Ave. 5 de Mayo Porlamar,I. de Margarita,4980,,Venezuela,10.9971,-63.9113,6.4238,-66.5897
+48,Lonesome Pine Restaurant,Fran Wilson,89 Chiaroscuro Rd.,Portland,97219,OR,USA,45.5202471,-122.6741949,43.8041,-120.5542
+49,Magazzini Alimentari Riuniti,Giovanni Rovelli,Via Ludovico il Moro 22,Bergamo,24100,,Italy,45.69601,9.66721,41.8719,12.5674
+50,Maison Dewey,Catherine Dewey,Rue Joseph-Bens 532,Bruxelles,1180,,Belgium,50.8503396,4.3517103,50.5039,4.4699
+52,Morgenstern Gesundkost,Alexander Feuer,Heerstr. 22,Leipzig,4179,,Germany,51.33962,12.37129,51.1657,10.4515
+54,Oc?ano Atl?ntico Ltda.,Yvonne Moncada,Ing. Gustavo Moncada 8585 Piso 20-A,Buenos Aires,1010,,Argentina,-34.603722,-58.381592,-38.4161,-63.6167
+55,Old World Delicatessen,Rene Phillips,2743 Bering St.,Anchorage,99508,AK,USA,61.217381,-149.863129,64.2008,-149.4937
+56,Ottilies K?seladen,Henriette Pfalzheim,Mehrheimerstr. 369,K?ln,50739,,Germany,50.935173,6.953101,51.1657,10.4515
+57,Paris sp?cialit?s,Marie Bertrand,"265, boulevard Charonne",Paris,75012,,France,48.864716,2.349014,46.2276,2.2137
+58,Pericles Comidas cl?sicas,Guillermo Fern?ndez,Calle Dr. Jorge Cash 321,M?xico D.F.,5033,,Mexico,19.432608,-99.133209,,
+59,Piccolo und mehr,Georg Pipps,Geislweg 14,Salzburg,5020,,Austria,47.811195,13.033229,47.5162,14.5501
+60,Princesa Isabel Vinhoss,Isabel de Castro,Estrada da sa?de n. 58,Lisboa,1756,,Portugal,38.736946,-9.142685,39.3999,-8.2245
+61,Que Del?cia,Bernardo Batista,"Rua da Panificadora, 12",Rio de Janeiro,2389,,Brazil,-22.908333,-43.196388,-14.235,-51.9253
+62,Queen Cozinha,L?cia Carvalho,"Alameda dos Can?rios, 891",S?o Paulo,5487,,Brazil,-23.533773,-46.62529,-14.235,-51.9253
+63,QUICK-Stop,Horst Kloss,Taucherstra?e 10,Cunewalde,1307,,Germany,51.0984,14.5167,51.1657,10.4515
+64,Rancho grande,Sergio Guti?rrez,Av. del Libertador 900,Buenos Aires,1010,,Argentina,-34.603722,-58.381592,-38.4161,-63.6167
+65,Rattlesnake Canyon Grocery,Paula Wilson,2817 Milton Dr.,Albuquerque,87110,NM,USA,35.0841034,-106.6509851,34.5199,-105.8701
+66,Reggiani Caseifici,Maurizio Moroni,Strada Provinciale 124,Reggio Emilia,42100,,Italy,44.699,10.6297,41.8719,12.5674
+67,Ricardo Adocicados,Janete Limeira,"Av. Copacabana, 267",Rio de Janeiro,2389,,Brazil,-22.908333,-43.196388,-14.235,-51.9253
+68,Richter Supermarkt,Michael Holz,Grenzacherweg 237,Gen?ve,1203,,Switzerland,46.204391,6.143158,46.8182,8.2275
+69,Romero y tomillo,Alejandra Camino,"Gran V?a, 1",Madrid,28001,,Spain,40.416775,-3.70379,40.4637,3.7492
+70,Sant? Gourmet,Jonas Bergulfsen,Erling Skakkes gate 78,Stavern,4110,,Norway,58.998287,10.035595,60.472,8.4689
+71,Save-a-lot Markets,Jose Pavarotti,187 Suffolk Ln.,Boise,83720,ID,USA,43.5988375,-116.243255,44.0682,-114.742
+73,Simons bistro,Jytte Petersen,Vinb?ltet 34,K?benhavn,1734,,Denmark,55.62075,12.650462,56.2639,9.5018
+74,Sp?cialit?s du monde,Dominique Perrier,"25, rue Lauriston",Paris,75016,,France,48.864716,2.349014,46.2276,2.2137
+75,Split Rail Beer & Ale,Art Braunschweiger,P.O. Box 555,Lander,82520,WY,USA,45.6366228,-89.4120753,43.076,-107.2903
+76,Supr?mes d?lices,Pascale Cartrain,"Boulevard Tirou, 255",Charleroi,B-6000,,Belgium,50.4113617,4.4444799,50.5039,4.4699
+77,The Big Cheese,Liz Nixon,89 Jefferson Way Suite 2,Portland,97201,OR,USA,45.5202471,-122.6741949,43.8041,-120.5542
+78,The Cracker Box,Liu Wong,55 Grizzly Peak Rd.,Butte,59801,MT,USA,45.9838436,-112.5007277,46.8797,-110.3626
+79,Toms Spezialit?ten,Karin Josephs,Luisenstr. 48,M?nster,44087,,Germany,51.96236,7.62571,51.1657,10.4515
+80,Tortuga Restaurante,Miguel Angel Paolino,Avda. Azteca 123,M?xico D.F.,5033,,Mexico,19.432608,-99.133209,,
+81,Tradi??o Hipermercados,Anabela Domingues,"Av. In?s de Castro, 414",S?o Paulo,5634,,Brazil,-23.533773,-46.62529,-14.235,-51.9253
+82,Trail's Head Gourmet Provisioners,Helvetius Nagy,722 DaVinci Blvd.,Kirkland,98034,WA,USA,47.6859573,-122.1920249,47.7511,-120.7401
+83,Vaffeljernet,Palle Ibsen,Smagsl?get 45,?rhus,8200,,Denmark,56.15674,10.21076,56.2639,9.5018
+84,Victuailles en stock,Mary Saveley,"2, rue du Commerce",Lyon,69004,,France,45.7484589,4.8467102,46.2276,2.2137
+85,Vins et alcools Chevalier,Paul Henriot,59 rue de l'Abbaye,Reims,51100,,France,49.25,4.03333,46.2276,2.2137
+86,Die Wandernde Kuh,Rita M?ller,Adenauerallee 900,Stuttgart,70563,,Germany,48.78232,9.17702,51.1657,10.4515
+87,Wartian Herkku,Pirkko Koskitalo,Torikatu 38,Oulu,90110,,Finland,65.021545,25.469885,61.9241,25.7482
+88,Wellington Importadora,Paula Parente,"Rua do Mercado, 12",Resende,8737,,Brazil,-22.4502,-44.4895,-14.235,-51.9253
+89,White Clover Markets,Karl Jablonski,305 - 14th Ave. S. Suite 3B,Seattle,98128,WA,USA,47.6038321,-122.3300624,47.7511,-120.7401
+90,Wilman Kala,Matti Karttunen,Keskuskatu 45,Helsinki,21240,,Finland,60.169716,24.952087,61.9241,25.7482

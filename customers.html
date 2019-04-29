@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="customer.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            let isFromCntry = window.sessionStorage.setItem('IS_IN_CNTRY');
+            if (isFromCntry == 'Y') {
+                window.sessionStorage.removeItem('IS_IN_CNTRY');
+                window.location.href = 'customers.html';
+            }
+            else {
+                let cntry = window.sessionStorage.getItem('GLB_CNTRY');
+                if (cntry) {
+                    $('#spnBack').show();
+                    ShowCountryMap();
+                }
+            }
+
+        });
+    </script>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Reports</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a id='hrefCust' href="customers.html">Customers</a></li>
+                <li><a href="orders.html">Orders</a></li>
+            </ul>
+        </div>
+    </nav>
+    <span id='spnBack' class="glyphicon glyphicon-chevron-left"
+        style="cursor:pointer;font-size: 25px;color: chocolate;display: none" onclick="Navigate()"></span>
+    <div id="graph"></div>
+    <div id="map"></div>
+    <div id="usmap"></div>
+    <div id="southamericamap"></div>
+    <div id="stateMap"></div>
+</body>
+
+</html>

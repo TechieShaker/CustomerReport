@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="orders.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Reports</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a id='hrefCust' href="customers.html">Customers</a></li>
+                <li class="active"><a href="orders.html">Orders</a></li>
+            </ul>
+        </div>
+    </nav>
+    <span id='spnBack' class="glyphicon glyphicon-chevron-left" style="cursor:pointer;font-size: 25px;color: chocolate;"
+        onclick="Navigate()"></span>
+    <div id="dvOrders"></div>
+    <div id="dvYear"></div>
+    <div id="dvMonth"></div>
+
+</body>
+
+</html>
